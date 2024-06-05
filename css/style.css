@@ -1,0 +1,65 @@
+/* Hide the checkbox */
+.switch-checkbox {
+    display: none;
+}
+
+/* Style the switch label */
+.switch-label {
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Style the switch button */
+.switch-label:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+/* Move the button to the right when checkbox is checked */
+.switch-checkbox:checked+.switch-label:before {
+    transform: translateX(14px);
+}
+
+.switch-checkbox:checked+.switch-label {
+    background-color: #1c3c6b;
+    /* Change to desired color */
+}
+
+
+
+/* 
+
+<input type="checkbox" id="switch-button" class="switch-checkbox">
+<label for="switch-button" class="switch-label"></label>
+
+*/
+
+
+/* 
+start image clip
+*/
+
+.ima-clip {
+    position: absolute;
+    top: -6px;
+    right:-3px;
+    width: 8px;
+    height: 8px;
+    background-color: #728db6;
+    transform: rotate(90deg);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%); 
+     
+    /* clip-path: polygon(100% 0, 0 0, 0 100%); */
+}

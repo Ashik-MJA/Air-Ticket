@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Ticket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- start header nav section -->
+    <header class="shadow-sm shadow-[#bbb9b950] ease-linear duration-300 text-[#1c3c6b] bg-[#ffffff] sticky top-0 z-50">
+        <nav class="container sm:w-11/12 w-full flex justify-between items-center "
+            style="font-family: 'Josefin Sans', sans-serif;">
+
+            <div class="py-5 text-green-600 font-bold text-3xl">
+                <a href="#home">
+                    <!-- <span class="text-white">Light</span>Code. -->
+                    <img class="w-48" src="image/goZayaan-logo.png" alt="header-logo">
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6 capitalize font-bold">
+                    <li class="flex w-[3rem]">
+                        <a href="#" class="hover:text-[#bbb9b9] ease-in duration-200  text-sm">
+                            <img class="w-12 block" src="image/air-1-h.png" alt="air-1-logo">
+                            <span class="text-center block">flight</span>
+                        </a>
+                    </li>
+                    <li class="flex w-[3rem]">
+                        <a href="#" class="hover:text-[#bbb9b9] ease-in duration-200  text-sm">
+                            <img class="w-10 block" src="image/air-2-h.png" alt="air-1-logo">
+                            <span class="text-center block">hotel</span>
+                        </a>
+                    </li>
+                    <li class="flex w-[3rem]">
+                        <a href="#" class="hover:text-[#bbb9b9] ease-in duration-200  text-sm">
+                            <img class="w-10 block" src="image/air-3-h.png" alt="air-1-logo">
+                            <span class="text-center block">tour</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6 md:mr-5">
+                    <li>
+                        <a href="./index.html" class="ease-in duration-200 text-sm">
+                            <img class="w-7" src="image/bangladesh.png" alt="bangladesh-flag">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./index.html" class="ease-in duration-200 uppercase text-sm">
+                            <span class="uppercase text-[#616161] text-xs">bdt </span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./index.html"
+                            class="hover:shadow-md hover:shadow-[#1c3c6b77] text-white ease-in duration-300 capitalize text-sm py-3 px-5 rounded-md bg-[#1c3c6b]">
+                            sign in
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Mobile screen -->
+            <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i id="header-bars" class="fa-solid fa-bars"></i>
+            </div>
+            <!-- responsive nav hidden -->
+            <div id="menu" class="hidden bg-white h-[100vh] absolute inset-0">
+                <ul class="h-full grid place-items-center py-20">
+                    <li>
+                        <a id="hLink" href="#home">
+                            <!-- <span class="text-white">Light</span>Code. -->
+                            <img class="w-48" src="image/goZayaan-logo.png" alt="header-logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="./index.html" class="hover:text-[#bbb9b9] ease-in duration-200  text-sm">
+                            <img class="w-12 block" src="image/air-1-h.png" alt="air-1-logo">
+                            <span class="text-center block">flight</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#" class="hover:text-[#bbb9b9] ease-in duration-200  text-sm">
+                            <img class="w-10 block" src="image/air-2-h.png" alt="air-1-logo">
+                            <span class="text-center block">hotel</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#" class="hover:text-[#bbb9b9] ease-in duration-200  text-sm">
+                            <img class="w-10 block" src="image/air-3-h.png" alt="air-1-logo">
+                            <span class="text-center block">tour</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="./index.html" class="ease-in duration-200 text-sm">
+                            <img class="w-7" src="image/bangladesh.png" alt="bangladesh-flag">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="./index.html" class="ease-in duration-200 uppercase text-sm">
+                            <span class="uppercase text-[#616161] text-xs">bdt </span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="./index.html"
+                            class="hover:shadow-md hover:shadow-[#1c3c6b77] text-white ease-in duration-300 capitalize text-sm py-3 px-5 rounded-md bg-[#1c3c6b]">
+                            sign in
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+    <!-- end header nav section -->
+
+    <!-- start search section -->
+    <section>
+
+        <div class="container sm:w-11/12 py-5">
+            <!-- start input radio div -->
+            <div class="flex capitalize text-[#1c3c6b] font-bold accent-[#1c3c6b] items-center mb-2">
+                <input class="mr-1 w-4 h-4" type="radio" id="one-way" name="fav_language" value="one-way">
+                <label class="mr-5" for="one-way">one way</label>
+                <input class="mr-1 w-4 h-4" type="radio" id="round-way" name="fav_language" value="round-way">
+                <label class="mr-5" for="round-way">round way</label>
+                <input class="mr-1 w-4 h-4" type="radio" id="multi-city" name="fav_language" value="multi-city">
+                <label class="mr-5" for="multi-city">multi city</label>
+            </div>
+            <!-- end  -->
+            <!-- start input search section -->
+            <div class="text-[#1c3c6b] lg:flex space-y-4 lg:space-y-0  lg:space-x-4 justify-between">
+                <div class="flex lg:w-[40%] justify-between">
+                    <div class="py-1 px-5 border border-[#5d6974] w-[45%] rounded-lg ">
+                        <span class="uppercase font-[400] text-sm">from</span>
+                        <div class="capitalize font-semibold">Dhaka</div>
+                        <p class="font-[400] text-sm tracking-[0.04em] truncate -mt-1">DAC, Hazrat Shahjalal
+                            International Airport</p>
+                    </div>
+                    <div class="py-1 px-5 border border-[#5d6974] w-[45%] rounded-lg">
+                        <span class="uppercase font-[400] text-sm">to</span>
+                        <div class="capitalize font-semibold">cox's bazar</div>
+                        <p class="font-[400] text-sm tracking-[0.04em] truncate -mt-1">CXB, Cox's Bazar Airport</p>
+                    </div>
+                </div>
+
+                <div class="flex border border-[#1c3c6b] rounded-lg">
+
+                    <div class="px-5 py-1 w-[50%] font-[400]">
+                        <span class="text-xs uppercase">Journey Date</span>
+                        <div class="font-bold">
+                            07 <span class="font-[400]">Feb'24</span>
+                        </div>
+                        <span class="text-sm">Wednesday</span>
+                    </div>
+
+                    <div class="px-5 py-1 w-[50%] border-l border-[#1c3c6b] font-[400]">
+                        <span class="uppercase text-xs">return date</span>
+                        <span class="block text-xs leading-[17px] mt-1">Save more on return filght</span>
+                    </div>
+
+                </div>
+
+                <!-- traveler class -->
+                <div class="border border-[#1c3c6b] rounded-lg pl-4 pr-14 py-1 font-[400] capitalize">
+                    <span class="uppercase text-xs">traveler class</span>
+                    <div class="font-bold ">1 traveler</div>
+                    <span class="text-xs block -mt-[2px]">economy</span>
+                </div>
+                <div class="bg-[#fccd03]  rounded-lg px-14 py-2 flex justify-center items-center">
+                    <span class="capitalize font-bold ">modify<br>search</span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- end search section -->
+
+    <!-- start body section -->
+    <section class="bg-[#ebf0f4] p-[1px]">
+        <div class="container w-11/12">
+            <!-- start filter body div -->
+            <div
+                class="lg:flex hidden  text-[#1c3c6b] bg-[#ffffff] my-5 py-5 px-5 space-x-8 items-center shadow-sm shadow-[#bbb9b967] rounded">
+                <div>
+                    <i class="fa-solid fa-filter fa-xl"></i>
+                    <span class="text-lg font-medium capitalize">filters</span>
+                </div>
+                <div>
+                    <span class="text-lg font-medium capitalize pr-[6px]">stops</span>
+                    <span class="py-[2px] px-[10px] border border-[#1c3c6b96] rounded-md">1</span>
+                    <span class="py-[2px] px-[10px] border border-[#1c3c6b96] rounded-md">2</span>
+                    <span class="py-[2px] px-[10px] border border-[#1c3c6b96] rounded-md">3</span>
+                </div>
+                <div class="capitalize flex items-center">
+                    <input type="checkbox" name="fav_language" value="round-way" id="switch-button"
+                        class="switch-checkbox">
+                    <label for="switch-button" class="switch-label"></label>
+                    <label for="switch-button" class="ml-2 text-sm">partially refundable</label>
+                </div>
+                <span class="capitalize text-sm">layover time <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                <span class="capitalize text-sm">depart time <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                <span class="capitalize text-sm">airlines <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                <span class="capitalize text-sm">more filters <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+            </div>
+            <!-- start schedule list div -->
+            <div class="grid grid-cols-7 gap-4">
+                <div class="col-span-7 lg:col-span-2 lg:order-last mt-4 lg:mt-0">
+                    <!-- time -->
+                    <div class="bg-white p-[16px] rounded shadow-sm shadow-[#bbb9b967]">
+                        <div class="flex space-x-[10px] text-[#1c3c6b] px-4 py-3 bg-[#ecf3fe] rounded">
+                            <div><i class="fa-solid fa-clock fa-lg mt-[18px] block"></i></div>
+                            <div class="text-center">
+                                <span class="block text-2xl font-bold">38:</span>
+                                <span class="text-sm font-[400]">min</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="block text-2xl font-bold">25</span>
+                                <span class="text-sm font-[400]">sec</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- need help -->
+                    <div class="hidden lg:block rounded shadow-sm shadow-[#bbb9b967] mt-4 bg-white">
+                        <div
+                            class="px-6 py-3 capitalize font-bold text-xl bg-gradient-to-r from-[#2e538a] to-[#057aac] rounded-t text-white">
+                            <span>need help?</span>
+                        </div>
+                        <div class="mx-6 py-5 border-b border-[#1c3c6b]">
+                            <span class="py-[4px] px-2 rounded-full bg-[#fccd03] text-[#1c3c6be3]">
+                                <i class="fa-solid fa-headset fa-sm"></i></span>
+                            <span class="font-[400] ml-2 text-sm text-[#1c3c6b80]">+88 09678 332211</span>
+                        </div>
+                        <div class="mx-6 py-5">
+                            <span class="py-[4px] px-2 rounded-full bg-[#fccd03] text-[#1c3c6be3]">
+                                <i class="fa-solid fa-bolt"></i></span>
+                            <span class="font-[400] ml-2 text-sm text-[#1c3c6b80]">m.me/GoZayaanBD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 col-span-7">
+                    <!-- start cheapest and fastest div -->
+                    <div class="flex p-3 bg-white rounded shadow-sm shadow-[#bbb9b967] justify-between">
+                        <div class="w-[48%] rounded bg-[#ebf0f4] p-2">
+                            <p class="capitalize font-medium text-lg">cheapest</p>
+                            <span class="font-[400] text-sm text-[#1c3c6bf9]">Showing the cheapest flights in ascending
+                                order</span>
+                        </div>
+                        <div class="w-[2px] rounded bg-[#cdcdcd]"></div>
+                        <div class="w-[48%] rounded p-2 hover:bg-[#ebf0f4]">
+                            <p class="capitalize font-medium text-lg">Fastest</p>
+                            <span class="font-[400] text-sm text-[#1c3c6bf9]">Click to see the fastest flights in
+                                ascending order</span>
+                        </div>
+                    </div>
+
+                    <!-- start ticket section -->
+                    <div class="grid grid-cols-7 bg-white my-5 rounded shadow-sm shadow-[#bbb9b967]">
+
+                        <div class="md:col-span-5 col-span-7 p-5">
+                            <div class="grid grid-cols-7 text-center ">
+                                <div class="col-span-1 flex ">
+                                    <img class="w-[80%] block m-auto" src="image/NOVOAIRLOGO.png" alt="">
+                                </div>
+                                <div class="col-span-2 text-left uppercase">
+                                    <span class="pl-2 font-[350] text-sm">novoair</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">07:40</span>
+                                    <span class="block uppercase font-[350] text-[#1c3c6bf3] text-sm">dac</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="text-xs font-[400] text-[#1c3c6bf5] ">Non-stop</span>
+                                    <div class="w-20 h-[2px] bg-[#728db6] block mx-auto mt-2 relative">
+                                        <div class="ima-clip"></div>
+                                    </div>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">08:45</span>
+                                    <span class="block uppercase text-[#1c3c6bf3] font-[350] text-sm">cxb</span>
+                                </div>
+                                <div class="col-span-1 text-right pr-2">
+                                    <span class="font-semibold text-sm">1h 5m</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 col-span-7 bg-[#ecf3fe] text-right p-5">
+                            <div class="uppercase text-sm font-[400] text-[#1c3c6be4] pb-2">
+                                <span>domb0124</span>
+                            </div>
+                            <div class="uppercase space-x-1 pb-3">
+                                <span class="line-through text-base font-[350] text-[#1c3c6bd8]">bdt 5,699</span>
+                                <span class="text-lg font-[600] text-[#1c3c6b]">bdt 5,369</span>
+                            </div>
+                            <div
+                                class="flex justify-between bg-[#fccd03] rounded py-1 px-4 items-center text-[#1c3c6b] capitalize">
+                                <span class="text-[16px] font-[500]">select</span>
+                                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-span-7 justify-between flex border-t border-[#74747489] py-2 px-5 text-[#1c3c6b9f] font-[400] capitalize text-sm">
+                            <div>
+                                <span>partially refundable <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+
+                            </div>
+                            <div>
+                                <span>flight details <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end ticket section -->
+                    <!-- start ticket section -->
+                    <div class="grid grid-cols-7 bg-white my-5 rounded shadow-sm shadow-[#bbb9b967]">
+
+                        <div class="md:col-span-5 col-span-7 p-5">
+                            <div class="grid grid-cols-7 text-center ">
+                                <div class="col-span-1 flex ">
+                                    <img class="w-[80%] block m-auto" src="image/NOVOAIRLOGO.png" alt="">
+                                </div>
+                                <div class="col-span-2 text-left uppercase">
+                                    <span class="pl-2 font-[350] text-sm">novoair</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">07:40</span>
+                                    <span class="block uppercase font-[350] text-[#1c3c6bf3] text-sm">dac</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="text-xs font-[400] text-[#1c3c6bf5] ">Non-stop</span>
+                                    <div class="w-20 h-[2px] bg-[#728db6] block mx-auto mt-2 relative">
+                                        <div class="ima-clip"></div>
+                                    </div>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">08:45</span>
+                                    <span class="block uppercase text-[#1c3c6bf3] font-[350] text-sm">cxb</span>
+                                </div>
+                                <div class="col-span-1 text-right pr-2">
+                                    <span class="font-semibold text-sm">1h 5m</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 col-span-7 bg-[#ecf3fe] text-right p-5">
+                            <div class="uppercase text-sm font-[400] text-[#1c3c6be4] pb-2">
+                                <span>domb0124</span>
+                            </div>
+                            <div class="uppercase space-x-1 pb-3">
+                                <span class="line-through text-base font-[350] text-[#1c3c6bd8]">bdt 5,699</span>
+                                <span class="text-lg font-[600] text-[#1c3c6b]">bdt 5,369</span>
+                            </div>
+                            <div
+                                class="flex justify-between bg-[#fccd03] rounded py-1 px-4 items-center text-[#1c3c6b] capitalize">
+                                <span class="text-[16px] font-[500]">select</span>
+                                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-span-7 justify-between flex border-t border-[#74747489] py-2 px-5 text-[#1c3c6b9f] font-[400] capitalize text-sm">
+                            <div>
+                                <span>partially refundable <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+
+                            </div>
+                            <div>
+                                <span>flight details <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end ticket section -->
+                    <!-- start ticket section -->
+                    <div class="grid grid-cols-7 bg-white my-5 rounded shadow-sm shadow-[#bbb9b967]">
+
+                        <div class="md:col-span-5 col-span-7 p-5">
+                            <div class="grid grid-cols-7 text-center ">
+                                <div class="col-span-1 flex ">
+                                    <img class="w-[80%] block m-auto" src="image/NOVOAIRLOGO.png" alt="">
+                                </div>
+                                <div class="col-span-2 text-left uppercase">
+                                    <span class="pl-2 font-[350] text-sm">novoair</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">07:40</span>
+                                    <span class="block uppercase font-[350] text-[#1c3c6bf3] text-sm">dac</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="text-xs font-[400] text-[#1c3c6bf5] ">Non-stop</span>
+                                    <div class="w-20 h-[2px] bg-[#728db6] block mx-auto mt-2 relative">
+                                        <div class="ima-clip"></div>
+                                    </div>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">08:45</span>
+                                    <span class="block uppercase text-[#1c3c6bf3] font-[350] text-sm">cxb</span>
+                                </div>
+                                <div class="col-span-1 text-right pr-2">
+                                    <span class="font-semibold text-sm">1h 5m</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 col-span-7 bg-[#ecf3fe] text-right p-5">
+                            <div class="uppercase text-sm font-[400] text-[#1c3c6be4] pb-2">
+                                <span>domb0124</span>
+                            </div>
+                            <div class="uppercase space-x-1 pb-3">
+                                <span class="line-through text-base font-[350] text-[#1c3c6bd8]">bdt 5,699</span>
+                                <span class="text-lg font-[600] text-[#1c3c6b]">bdt 5,369</span>
+                            </div>
+                            <div
+                                class="flex justify-between bg-[#fccd03] rounded py-1 px-4 items-center text-[#1c3c6b] capitalize">
+                                <span class="text-[16px] font-[500]">select</span>
+                                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-span-7 justify-between flex border-t border-[#74747489] py-2 px-5 text-[#1c3c6b9f] font-[400] capitalize text-sm">
+                            <div>
+                                <span>partially refundable <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+
+                            </div>
+                            <div>
+                                <span>flight details <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end ticket section -->
+                    <!-- start ticket section -->
+                    <div class="grid grid-cols-7 bg-white my-5 rounded shadow-sm shadow-[#bbb9b967]">
+
+                        <div class="md:col-span-5 col-span-7 p-5">
+                            <div class="grid grid-cols-7 text-center ">
+                                <div class="col-span-1 flex ">
+                                    <img class="w-[80%] block m-auto" src="image/NOVOAIRLOGO.png" alt="">
+                                </div>
+                                <div class="col-span-2 text-left uppercase">
+                                    <span class="pl-2 font-[350] text-sm">novoair</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">07:40</span>
+                                    <span class="block uppercase font-[350] text-[#1c3c6bf3] text-sm">dac</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="text-xs font-[400] text-[#1c3c6bf5] ">Non-stop</span>
+                                    <div class="w-20 h-[2px] bg-[#728db6] block mx-auto mt-2 relative">
+                                        <div class="ima-clip"></div>
+                                    </div>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">08:45</span>
+                                    <span class="block uppercase text-[#1c3c6bf3] font-[350] text-sm">cxb</span>
+                                </div>
+                                <div class="col-span-1 text-right pr-2">
+                                    <span class="font-semibold text-sm">1h 5m</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 col-span-7 bg-[#ecf3fe] text-right p-5">
+                            <div class="uppercase text-sm font-[400] text-[#1c3c6be4] pb-2">
+                                <span>domb0124</span>
+                            </div>
+                            <div class="uppercase space-x-1 pb-3">
+                                <span class="line-through text-base font-[350] text-[#1c3c6bd8]">bdt 5,699</span>
+                                <span class="text-lg font-[600] text-[#1c3c6b]">bdt 5,369</span>
+                            </div>
+                            <div
+                                class="flex justify-between bg-[#fccd03] rounded py-1 px-4 items-center text-[#1c3c6b] capitalize">
+                                <span class="text-[16px] font-[500]">select</span>
+                                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-span-7 justify-between flex border-t border-[#74747489] py-2 px-5 text-[#1c3c6b9f] font-[400] capitalize text-sm">
+                            <div>
+                                <span>partially refundable <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+
+                            </div>
+                            <div>
+                                <span>flight details <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end ticket section -->
+                    <!-- start ticket section -->
+                    <div class="grid grid-cols-7 bg-white my-5 rounded shadow-sm shadow-[#bbb9b967]">
+
+                        <div class="md:col-span-5 col-span-7 p-5">
+                            <div class="grid grid-cols-7 text-center ">
+                                <div class="col-span-1 flex ">
+                                    <img class="w-[80%] block m-auto" src="image/NOVOAIRLOGO.png" alt="">
+                                </div>
+                                <div class="col-span-2 text-left uppercase">
+                                    <span class="pl-2 font-[350] text-sm">novoair</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">07:40</span>
+                                    <span class="block uppercase font-[350] text-[#1c3c6bf3] text-sm">dac</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="text-xs font-[400] text-[#1c3c6bf5] ">Non-stop</span>
+                                    <div class="w-20 h-[2px] bg-[#728db6] block mx-auto mt-2 relative">
+                                        <div class="ima-clip"></div>
+                                    </div>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">08:45</span>
+                                    <span class="block uppercase text-[#1c3c6bf3] font-[350] text-sm">cxb</span>
+                                </div>
+                                <div class="col-span-1 text-right pr-2">
+                                    <span class="font-semibold text-sm">1h 5m</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 col-span-7 bg-[#ecf3fe] text-right p-5">
+                            <div class="uppercase text-sm font-[400] text-[#1c3c6be4] pb-2">
+                                <span>domb0124</span>
+                            </div>
+                            <div class="uppercase space-x-1 pb-3">
+                                <span class="line-through text-base font-[350] text-[#1c3c6bd8]">bdt 5,699</span>
+                                <span class="text-lg font-[600] text-[#1c3c6b]">bdt 5,369</span>
+                            </div>
+                            <div
+                                class="flex justify-between bg-[#fccd03] rounded py-1 px-4 items-center text-[#1c3c6b] capitalize">
+                                <span class="text-[16px] font-[500]">select</span>
+                                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-span-7 justify-between flex border-t border-[#74747489] py-2 px-5 text-[#1c3c6b9f] font-[400] capitalize text-sm">
+                            <div>
+                                <span>partially refundable <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+
+                            </div>
+                            <div>
+                                <span>flight details <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end ticket section -->
+                    <!-- start ticket section -->
+                    <div class="grid grid-cols-7 bg-white my-5 rounded shadow-sm shadow-[#bbb9b967]">
+
+                        <div class="md:col-span-5 col-span-7 p-5">
+                            <div class="grid grid-cols-7 text-center ">
+                                <div class="col-span-1 flex ">
+                                    <img class="w-[80%] block m-auto" src="image/NOVOAIRLOGO.png" alt="">
+                                </div>
+                                <div class="col-span-2 text-left uppercase">
+                                    <span class="pl-2 font-[350] text-sm">novoair</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">07:40</span>
+                                    <span class="block uppercase font-[350] text-[#1c3c6bf3] text-sm">dac</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="text-xs font-[400] text-[#1c3c6bf5] ">Non-stop</span>
+                                    <div class="w-20 h-[2px] bg-[#728db6] block mx-auto mt-2 relative">
+                                        <div class="ima-clip"></div>
+                                    </div>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">08:45</span>
+                                    <span class="block uppercase text-[#1c3c6bf3] font-[350] text-sm">cxb</span>
+                                </div>
+                                <div class="col-span-1 text-right pr-2">
+                                    <span class="font-semibold text-sm">1h 5m</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 col-span-7 bg-[#ecf3fe] text-right p-5">
+                            <div class="uppercase text-sm font-[400] text-[#1c3c6be4] pb-2">
+                                <span>domb0124</span>
+                            </div>
+                            <div class="uppercase space-x-1 pb-3">
+                                <span class="line-through text-base font-[350] text-[#1c3c6bd8]">bdt 5,699</span>
+                                <span class="text-lg font-[600] text-[#1c3c6b]">bdt 5,369</span>
+                            </div>
+                            <div
+                                class="flex justify-between bg-[#fccd03] rounded py-1 px-4 items-center text-[#1c3c6b] capitalize">
+                                <span class="text-[16px] font-[500]">select</span>
+                                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-span-7 justify-between flex border-t border-[#74747489] py-2 px-5 text-[#1c3c6b9f] font-[400] capitalize text-sm">
+                            <div>
+                                <span>partially refundable <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+
+                            </div>
+                            <div>
+                                <span>flight details <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end ticket section -->
+                    <!-- start ticket section -->
+                    <div class="grid grid-cols-7 bg-white my-5 rounded shadow-sm shadow-[#bbb9b967]">
+
+                        <div class="md:col-span-5 col-span-7 p-5">
+                            <div class="grid grid-cols-7 text-center ">
+                                <div class="col-span-1 flex ">
+                                    <img class="w-[80%] block m-auto" src="image/NOVOAIRLOGO.png" alt="">
+                                </div>
+                                <div class="col-span-2 text-left uppercase">
+                                    <span class="pl-2 font-[350] text-sm">novoair</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">07:40</span>
+                                    <span class="block uppercase font-[350] text-[#1c3c6bf3] text-sm">dac</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="text-xs font-[400] text-[#1c3c6bf5] ">Non-stop</span>
+                                    <div class="w-20 h-[2px] bg-[#728db6] block mx-auto mt-2 relative">
+                                        <div class="ima-clip"></div>
+                                    </div>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">08:45</span>
+                                    <span class="block uppercase text-[#1c3c6bf3] font-[350] text-sm">cxb</span>
+                                </div>
+                                <div class="col-span-1 text-right pr-2">
+                                    <span class="font-semibold text-sm">1h 5m</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 col-span-7 bg-[#ecf3fe] text-right p-5">
+                            <div class="uppercase text-sm font-[400] text-[#1c3c6be4] pb-2">
+                                <span>domb0124</span>
+                            </div>
+                            <div class="uppercase space-x-1 pb-3">
+                                <span class="line-through text-base font-[350] text-[#1c3c6bd8]">bdt 5,699</span>
+                                <span class="text-lg font-[600] text-[#1c3c6b]">bdt 5,369</span>
+                            </div>
+                            <div
+                                class="flex justify-between bg-[#fccd03] rounded py-1 px-4 items-center text-[#1c3c6b] capitalize">
+                                <span class="text-[16px] font-[500]">select</span>
+                                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-span-7 justify-between flex border-t border-[#74747489] py-2 px-5 text-[#1c3c6b9f] font-[400] capitalize text-sm">
+                            <div>
+                                <span>partially refundable <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+
+                            </div>
+                            <div>
+                                <span>flight details <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end ticket section -->
+                    <!-- start ticket section -->
+                    <div class="grid grid-cols-7 bg-white my-5 rounded shadow-sm shadow-[#bbb9b967]">
+
+                        <div class="md:col-span-5 col-span-7 p-5">
+                            <div class="grid grid-cols-7 text-center ">
+                                <div class="col-span-1 flex ">
+                                    <img class="w-[80%] block m-auto" src="image/NOVOAIRLOGO.png" alt="">
+                                </div>
+                                <div class="col-span-2 text-left uppercase">
+                                    <span class="pl-2 font-[350] text-sm">novoair</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">07:40</span>
+                                    <span class="block uppercase font-[350] text-[#1c3c6bf3] text-sm">dac</span>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="text-xs font-[400] text-[#1c3c6bf5] ">Non-stop</span>
+                                    <div class="w-20 h-[2px] bg-[#728db6] block mx-auto mt-2 relative">
+                                        <div class="ima-clip"></div>
+                                    </div>
+                                </div>
+                                <div class="col-span-1">
+                                    <span class="font-[500] text-[#1c3c6b] text-lg">08:45</span>
+                                    <span class="block uppercase text-[#1c3c6bf3] font-[350] text-sm">cxb</span>
+                                </div>
+                                <div class="col-span-1 text-right pr-2">
+                                    <span class="font-semibold text-sm">1h 5m</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 col-span-7 bg-[#ecf3fe] text-right p-5">
+                            <div class="uppercase text-sm font-[400] text-[#1c3c6be4] pb-2">
+                                <span>domb0124</span>
+                            </div>
+                            <div class="uppercase space-x-1 pb-3">
+                                <span class="line-through text-base font-[350] text-[#1c3c6bd8]">bdt 5,699</span>
+                                <span class="text-lg font-[600] text-[#1c3c6b]">bdt 5,369</span>
+                            </div>
+                            <div
+                                class="flex justify-between bg-[#fccd03] rounded py-1 px-4 items-center text-[#1c3c6b] capitalize">
+                                <span class="text-[16px] font-[500]">select</span>
+                                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-span-7 justify-between flex border-t border-[#74747489] py-2 px-5 text-[#1c3c6b9f] font-[400] capitalize text-sm">
+                            <div>
+                                <span>partially refundable <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+
+                            </div>
+                            <div>
+                                <span>flight details <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end ticket section -->
+                    
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end body section -->
+
+    <!-- start footer section -->
+    <footer class="bg-[#1c3c6b] pt-16 pb-10 text-[#fffff6]">
+        <div class="container w-11/12 ">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 space-y-7 lg:space-y-0 gap-4 text-[14px] font-[350] mb-10">
+                <div class="col-span-1">
+                    <div class="grid grid-cols-2">
+                        <div class="col-span-1 capitalize pt-1">
+                            <ul class="space-y-[8px]">
+                                <li class="font-[500] text-lg mb-[5px]">discover</li>
+                                <li>home</li>
+                                <li>terms</li>
+                                <li>Talent & Culture</li>
+                            </ul>
+                        </div>
+                        <div class="col-span-1">
+                            <ul class="space-y-[8px] pt-10">
+                                <li>Refund Policy</li>
+                                <li>EMI Policy</li>
+                                <li>Privacy Policy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 pt-1">
+                    <span class="block font-[500] text-lg mb-[12px]">Payment Methods</span>
+                    <div class="grid grid-cols-4 gap-3">
+                        <div class="bg-white rounded flex p-2">
+                           <img class="block h-[80%] m-auto w-[90%]" src="image/R.png" alt="footer-bank-image"> 
+                        </div>
+                        <div class="bg-white rounded flex p-2 h-16">
+                           <img class="block h-[80%] m-auto w-[90%]" src="image/amex-american-express-logo.png" alt="footer-bank-image"> 
+                        </div>
+                        <div class="bg-white rounded flex p-2 h-16">
+                           <img class="block h-[80%] m-auto w-[90%]" src="image/Mastercard-Logo.png" alt="footer-bank-image"> 
+                        </div>
+                        <div class="bg-white rounded flex p-2 h-16">
+                           <img class="block h-[80%] m-auto w-[90%]" src="image/union-pay.png" alt="footer-bank-image"> 
+                        </div>
+                        <div class="bg-white rounded flex p-2 h-16">
+                           <img class="block h-[80%] m-auto w-[90%]" src="image/diners.png" alt="footer-bank-image"> 
+                        </div>
+                        <div class="bg-white rounded flex p-2 h-16">
+                           <img class="block h-[80%] m-auto w-[90%]" src="image/DBBL.png" alt="footer-bank-image"> 
+                        </div>
+                        <div class="bg-white rounded flex p-2 h-16">
+                           <img class="block h-[80%] m-auto w-[90%]" src="image/takapay.png" alt="footer-bank-image"> 
+                        </div>
+                        <div class="bg-white rounded flex p-2 h-16">
+                           <img class="block h-[80%] m-auto w-[90%]" src="image/bkash.webp" alt="footer-bank-image"> 
+                        </div>
+                        <div class="bg-white rounded flex p-2 h-16">
+                           <img class="block h-[80%] m-auto w-[90%]" src="image/nogad.png" alt="footer-bank-image"> 
+                        </div>
+                        <div class="bg-white rounded flex p-2 h-16">
+                           <img class="block h-[80%] m-auto w-[90%]" src="image/upay.png" alt="footer-bank-image"> 
+                        </div>
+                        <div class="bg-white rounded flex p-2 h-16">
+                           <img class="block h-[80%] m-auto w-[90%]" src="image/tap.png" alt="footer-bank-image"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 px-4 pt-1">
+                    <span class="block font-[500] text-lg mb-[12px]">Need Help ?</span>
+                    <p class="leading-6 tracking-wider">We are Always here for you! Knock us on Messenger anytime or Call our Hotline (10AM - 10PM).</p>
+                </div>
+                <div class="col-span-1 pt-1">
+                    <span class="block font-[500] text-lg mb-[12px]">Contact</span>
+                    <p class="tracking-wider mb-2">info@gozayaan.com</p>
+                    <p class="tracking-wider">+88 09678 332211</p>
+                    <div class="flex space-x-3 mt-5">
+                        <span class="flex w-10 h-10 rounded-full bg-[#496389]"><i class="fa-brands fa-facebook-f m-auto"></i></span>
+                        <span class="flex w-10 h-10 rounded-full bg-[#496389]"><i class="fa-brands fa-youtube m-auto"></i></span>
+                        <span class="flex w-10 h-10 rounded-full bg-[#496389]"><i class="fa-brands fa-instagram m-auto"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="w-full h-[1px] bg-white mb-4"></div>
+
+            <div class="w-full flex justify-between items-center">
+            
+                    <img class="w-32 " src="image/footer-logo.png" alt="footer-logo">
+               
+                    <span class="font-[350] text-sm tracking-wider">&copy; Copyright GoZayaan Ltd.</span>
+            
+            </div>
+
+        </div>
+    </footer>
+    <!-- end footer sectioln -->
+
+    <!-- footer navbar -->
+    <div class="bg-white pt-12 sm:pt-16 lg:pt-24 lg:hidden">
+        <!-- nav - start -->
+        <nav class="fixed bottom-0 mx-auto w-full">
+            <a href="#"
+                class="absolute -top-7 left-1/2 flex h-14 w-14 -translate-x-1/2 items-center justify-center rounded-3xl bg-indigo-500 text-white shadow-lg transition duration-100 hover:bg-indigo-600 sm:-top-8 sm:h-16 sm:w-16">
+               
+                <i class="fa-solid fa-filter fa-xl"></i>
+            </a>
+    
+            <div
+                class="flex justify-between gap-8 border-t bg-white px-10 py-4 text-xs sm:rounded-t-xl sm:border-transparent sm:text-sm sm:shadow-2xl">
+                <span class="flex flex-col items-center gap-1 text-indigo-500">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                        <path
+                            d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+                    </svg>
+    
+                    <span>Home</span>
+                </span>
+    
+                <a href="#"
+                    class="mr-4 flex flex-col items-center gap-1 text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600 sm:mr-8">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M11.644 1.59a.75.75 0 01.712 0l9.75 5.25a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.712 0l-9.75-5.25a.75.75 0 010-1.32l9.75-5.25z" />
+                        <path
+                            d="M3.265 10.602l7.668 4.129a2.25 2.25 0 002.134 0l7.668-4.13 1.37.739a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.71 0l-9.75-5.25a.75.75 0 010-1.32l1.37-.738z" />
+                        <path
+                            d="M10.933 19.231l-7.668-4.13-1.37.739a.75.75 0 000 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 000-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 01-2.134-.001z" />
+                    </svg>
+    
+                    <span>Products</span>
+                </a>
+    
+                <a href="#"
+                    class="ml-4 flex flex-col items-center gap-1 text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600 sm:ml-8">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+    
+                    <span>Search</span>
+                </a>
+    
+                <a href="#"
+                    class="flex flex-col items-center gap-1 text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                            clip-rule="evenodd" />
+                    </svg>
+    
+                    <span>About</span>
+                </a>
+            </div>
+        </nav>
+        <!-- nav - end -->
+    </div>
+
+
+
+
+    <!-- script link -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
